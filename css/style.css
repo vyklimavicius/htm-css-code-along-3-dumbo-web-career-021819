@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Anton');
+/* @import allows to add code to your css */
+/* This is a comment! */
+/* CSS syntax */
+
+/*
+selector {
+property : value;
+property : value;
+}
+*/
+
+/* Type selector */
+
+
+
+p {
+  /* Select all <p> elements */
+  font-size: 16px;  /* ?pt, 100%, 1em(16px the px you want/default is 16) em great advantage */
+  line-height: 1.5em;
+}
+
+figcaption {
+  /* font-weight: normal;
+  font-size: 0.75em;
+  line-height: 1.5em;
+  font-family: Georgia, "New times Roman", serif;*/ /* when the string has space goes in ""*/
+  font: normal 0.75em/1.5em Georgia, "New Times Roman", serif; /* The same thing as above */
+  color: #E86841; /* also rgb(0,0,0) or rgba(0,0,0,0) */
+  text-align: center;
+}
+
+/* (.)Class selectors(applied to many elements as you want) */
+
+.milk-text { /* select elements with class="milk-test"*/
+  font: bold 2.6em Arial, serif;
+  color: white;
+  text-shadow: 0 2px 3px black; /* The text shadow property takes 4 values => horiz offset,vertical,blurradius and color.*/
+}
+/* (#)Id selector(applied only to one unique element per page) */
+
+#logo {
+  background-color: blue;
+}
+
+/* Descendent selector, select the Descendent between a parent element */
+
+#logo h1 { /* takes h1 if is inside with the id == to logo */
+  font-family: Anton;
+}
+
+/* psuedo class selectors, select element based on an event state */
+
+/* style all of the links inside ot the section == detail  */
+
+#details a:link {/* is taking the a(link) :link(the state of the link/visited,hover,etc) */
+color: black;
+text-decoration: none;
+}
+
+#details a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+#details a:active {
+  color: red;
+}
